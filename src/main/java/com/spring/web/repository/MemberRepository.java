@@ -6,4 +6,6 @@ import com.spring.web.domain.Member;
 
 public interface MemberRepository extends CrudRepository<Member, Long> {
 
+	Member findByUemail(String email);
+
 }
